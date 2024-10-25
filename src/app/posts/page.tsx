@@ -112,7 +112,7 @@ export default function PostsPage() {
         <ParticleBackground />
       </div>
       <h1 style={{ position: 'relative', zIndex: 1, marginTop: '8rem', marginBottom: '4rem' }}>My Posts</h1>
-      <PostsList style={{ position: 'relative', zIndex: 1 }} />
+      <PostsList />
     </div>
   );
 }
