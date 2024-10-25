@@ -97,7 +97,7 @@ function PostsList() {
   const { posts, name } = postsData;
 
   return (
-    <div className="posts-grid" style={{ position: 'relative', zIndex: 1 }}>
+    <div className="posts-grid">
     {posts.map((post) => (
         <PostCard key={post.title} post={post} />
     ))}
