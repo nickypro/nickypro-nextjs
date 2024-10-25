@@ -88,7 +88,7 @@ function PostsList() {
 
   if (!postsData) {
     return (
-      <div className="posts-grid">
+      <div className="posts-grid" style={{ position: 'relative', zIndex: 1 }}>
         <div className="post-card" style={{ padding: '4rem 2rem' }}>Loading Posts...</div>
       </div>
     );
