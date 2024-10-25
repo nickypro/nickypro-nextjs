@@ -28,6 +28,8 @@ export interface PostData {
   postedAt: string;
   modifiedAt: string;
   htmlBody: string;
+  socialPreviewData: { imageUrl: string, text: string };
+  socialPreviewImageUrl: string;
 }
 
 async function queryGraphQL(query: string): Promise<any> {
