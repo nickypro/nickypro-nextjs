@@ -101,6 +101,9 @@ export async function getUserPosts(
   console.log(postResults);
   const totalCount = posts.totalCount;
 
+  // sort by postedAt descending (reverse chronological)
+  postResults.sort((a: PostData, b: PostData) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+
   console.log(`Loaded ${postResults.length} posts for ${name} (${userId}), limit: ${limit}, offset: ${offset}, total: ${totalCount}`);
 
   // Add a cache-control header to the response
