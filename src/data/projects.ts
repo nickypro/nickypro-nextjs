@@ -9,6 +9,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "ParaScopes: Using Residual Stream Decoders to find Planning in Language Models",
+    description: "Helped understand and decode how LLMs \"plan\" information by analyzing and decoding single-token residual stream activations. Used 2 different methods: 1) using the original model to decode the residuals stream, and 2) using a map to text auto-encoder space. ",
+    image: "/images/projects/parascopes-top.png",
+    link: "https://link.nicky.pro/parascopes",
+    tags: ["ParaScopes", "Residual Stream Decoders", "Transformers", "Machine Learning", "Python", "Model Interpretability"],
+    date: "2025-02"
+  },
+  {
     title: "Extracting Paragraphs from LLM Token Activations",
     description: "Investigated how language models encode and plan paragraph-level information by analyzing single-token activations. Developed methods to extract and transfer contextual information between different prompts using activation patching techniques. Demonstrated that models maintain strong contextual awareness during text generation.",
     image: "/images/projects/extracting-paragraphs.png",

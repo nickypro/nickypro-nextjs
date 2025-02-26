@@ -8,7 +8,6 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     mdxRs: true,
-    serverActions: true,
   },
   images: {
     unoptimized: true,
