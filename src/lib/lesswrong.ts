@@ -54,8 +54,8 @@ async function queryGraphQL(query: string): Promise<any> {
 
 export async function getUserPosts(
   userId: string = "MDDhxT3EekBMYfQ8D",
-  limit: number = 21,
-  offset: number = 0
+  limit: number = 100, // not implemented
+  offset: number = 0 // not implemented
 ): Promise<{ posts: PostData[], name: string, totalCount: number }> {
   const query = `
     query GetUserAndPosts {
@@ -69,8 +69,6 @@ export async function getUserPosts(
       }
       posts: posts(input: {
         terms: {userId: "${userId}"},
-        limit: ${limit},
-        offset: ${offset}
       }) {
         results {
           title
