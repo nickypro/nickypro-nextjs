@@ -89,7 +89,10 @@ function PostsList() {
   if (!postsData) {
     return (
       <div className="posts-grid" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="post-card" style={{ padding: '4rem 2rem' }}>Loading Posts...</div>
+        <div className="post-card" style={{ padding: '4rem 2rem' }}>
+          <h2>Loading Posts...</h2>
+          <p>Alternatively, view my posts on <a href="https://lesswrong.com/user/nicky" target="_blank" rel="noreferrer">LessWrong</a>.</p>
+        </div>
       </div>
     );
   }
